@@ -1,5 +1,7 @@
 import { MyTitleScene } from "./myTitleScene";
 import { MyGameScene } from "./myGameScene";
+import { YouWinScene } from "./youWinScene";
+import { MusicScene } from "./musicScene";
 
 type GameConfig = Phaser.Types.Core.GameConfig;
 
@@ -31,5 +33,5 @@ export const MyGameConfig: GameConfig = {
     fps: {
         target: fps,
     },
-    scene: [MyTitleScene, MyGameScene],
+    scene: [MyTitleScene, MyGameScene, YouWinScene, MusicScene],
 };
