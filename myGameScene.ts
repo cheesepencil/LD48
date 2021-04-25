@@ -33,6 +33,7 @@ export class MyGameScene extends Phaser.Scene {
         this.add.text(128, 0, `Level ${this.level} of 5`).setOrigin(0.5, 0);
         this.dudeSprite = this.add.sprite(0, 0, "dude").setOrigin(0, 0);
         this.earSprite = this.add.sprite(30, 128, "ear").setOrigin(0, 0.5);
+        this.input.on('pointerdown', this.onInput, this);
         this.input.keyboard.on("keydown-SPACE", this.onInput, this);
 
         this.qtipTween = this.tweens.add({
