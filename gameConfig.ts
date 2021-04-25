@@ -12,6 +12,7 @@ export const MyGameConfig: GameConfig = {
     input: {
         gamepad: true,
         keyboard: true,
+        touch: true
     },
     render: {
         pixelArt: true,
